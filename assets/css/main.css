@@ -113,10 +113,10 @@
 			background-repeat: repeat,			no-repeat;
 			background-size: 100px 100px, cover;
 			background-position: top left,		center center;
-			-moz-transition: opacity 1.75s ease-out;
-			-webkit-transition: opacity 1.75s ease-out;
-			-ms-transition: opacity 1.75s ease-out;
-			transition: opacity 1.75s ease-out;
+			-moz-transition: opacity 0.75s ease-out;
+			-webkit-transition: opacity 0.75s ease-out;
+			-ms-transition: opacity 0.75s ease-out;
+			transition: opacity 0.75s ease-out;
 		}
 
 		body.is-loading:after {
@@ -126,13 +126,12 @@
 /* Type */
 
 	body, input, select, textarea {
-		color: #414f57;
-		font-family: "Source Sans Pro", Helvetica, sans-serif;
+		color: #888;
+		font-family: "Source Sans Pro", sans-serif;
 		font-size: 14pt;
 		font-weight: 300;
 		line-height: 2;
-		letter-spacing: 0.2em;
-		text-transform: uppercase;
+		letter-spacing: -0.02em;
 	}
 
 		@media screen and (max-width: 1680px) {
@@ -169,11 +168,11 @@
 		}
 
 		a:hover {
-			color: #ff7496;
+			color: #00C921;
 		}
 
 	strong, b {
-		color: #313f47;
+		color: #000000;
 	}
 
 	em, i {
@@ -181,23 +180,26 @@
 	}
 
 	p {
-		margin: 0 0 1.5em 0;
+		margin: 0 0 1em 0;
+		text-align: left;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
 		color: #313f47;
 		line-height: 1.5;
+		letter-spacing: 0.1em;
 		margin: 0 0 0.75em 0;
+		text-transform: uppercase;
 	}
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 			color: inherit;
 			text-decoration: none;
+			text-transform: uppercase;
 		}
 
 	h1 {
-		font-size: 1.85em;
-		letter-spacing: 0.22em;
+		font-size: 2em;
 		margin: 0 0 0.525em 0;
 	}
 
@@ -482,11 +484,20 @@
 	ul {
 		list-style: disc;
 		margin: 0 0 1.5em 0;
-		padding-left: 1em;
+
 	}
 
 		ul li {
 			padding-left: 0.5em;
+		}
+
+		ul.interest{
+			padding: 0;
+		}
+
+		ul.interest li{
+			padding: 0;
+			list-style:	none;
 		}
 
 		ul.alt {
@@ -503,6 +514,27 @@
 					border-top: 0;
 					padding-top: 0;
 				}
+
+		ul.files {
+			cursor: default;
+			list-style: none;
+			padding-left: 0;
+			margin-top: -0.675em;
+		}
+
+			ul.files li {
+				display: inline-block;
+				padding: 0.675em 0.5em;
+			}
+
+			ul.files li a {
+				font-size: 1.25em;
+				line-height: 1.5;
+				letter-spacing: 0.1em;
+				margin: 0 0 0.75em 0;
+				text-transform: uppercase;
+				text-decoration: underline;
+			}
 
 		ul.icons {
 			cursor: default;
@@ -718,10 +750,10 @@
 		-webkit-transform: rotateX(0deg);
 		-ms-transform: rotateX(0deg);
 		transform: rotateX(0deg);
-		-moz-transition: opacity 1s ease, -moz-transform 1s ease;
-		-webkit-transition: opacity 1s ease, -webkit-transform 1s ease;
-		-ms-transition: opacity 1s ease, -ms-transform 1s ease;
-		transition: opacity 1s ease, transform 1s ease;
+		-moz-transition: opacity 1s ease;
+		-webkit-transition: opacity 1s ease;
+		-ms-transition: opacity 1s ease;
+		transition: opacity 1s ease;
 	}
 
 		#main .avatar {
@@ -749,6 +781,28 @@
 				background: #c8cccf;
 			}
 
+			#main .research {
+				display: inline-table;
+				padding-right: 5em;
+			}
+			#main .personal {
+				display: inline-table;
+			}
+			#main .avatar_small {
+			    display: inline-table;
+			}
+			#main .avatar_small img {
+				display: block;
+				margin: 0 auto;
+				border-radius: 100%;
+				box-shadow: 0 0 0 1.5em #ffffff;
+				height: 75px;
+			}
+			#main .nav {
+					display: inline-table;
+					vertical-align: top;
+			}
+
 		@media screen and (max-width: 480px) {
 
 			#main {
@@ -770,6 +824,33 @@
 			-webkit-transform: rotateX(15deg);
 			-ms-transform: rotateX(15deg);
 			transform: rotateX(15deg);
+		}
+
+		header.vitae h1, h2, h3, h4, h5, h6{
+			text-align: left;
+			line-height: 1.5;
+			letter-spacing: 0.1em;
+			margin: 0.75em 0.75em 0 0;
+		}
+
+		header.vitae h2{
+			padding-left: 1.0em;
+		}
+
+		header.vitae h4{
+			padding-left: 2.0em;
+			margin: 0, 0.5em, 0, 0.5em;
+		}
+
+		header.vitae p, ul{
+			padding-left: 3.0em;
+			margin: 0;
+		}
+
+		header.vitae ul, li{
+			padding-left: 4.0em;
+			text-align: left;
+			list-style: square;
 		}
 
 /* Footer */
