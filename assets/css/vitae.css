@@ -826,6 +826,33 @@
 			transform: rotateX(15deg);
 		}
 
+		header.vitae h1, h2, h3, h4, h5, h6{
+			text-align: left;
+			line-height: 1.5;
+			letter-spacing: 0.1em;
+			margin: 0.75em 0.75em 0 0;
+		}
+
+		header.vitae h2{
+			padding-left: 1.0em;
+		}
+
+		header.vitae h4{
+			padding-left: 2.0em;
+			margin: 0, 0.5em, 0, 0.5em;
+		}
+
+		header.vitae p, ul{
+			padding-left: 3.0em;
+			margin: 0;
+		}
+
+		header.vitae ul, li{
+			padding-left: 4.0em;
+			text-align: left;
+			list-style: square;
+		}
+
 /* Footer */
 
 	#footer {
