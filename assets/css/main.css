@@ -783,10 +783,12 @@
 
 			#main .research {
 				display: inline-table;
-				padding-right: 5em;
+				padding-left: 2.5em;
+				padding-right: 2.5em;
 			}
 			#main .personal {
 				display: inline-table;
+				padding-left: 2.5em;
 			}
 			#main .avatar_small {
 			    display: inline-table;
