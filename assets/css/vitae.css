@@ -837,18 +837,24 @@
 			padding-left: 1.0em;
 		}
 
-		header.vitae h4{
+		header.vitae h3{
 			padding-left: 2.0em;
-			margin: 0, 0.5em, 0, 0.5em;
+			margin: 1em 0.5em 0 0.5em;
+		}
+
+		header.vitae h4{
+			padding-left: 3.0em;
+			margin: 0 0.5em 0 0.5em;
+			font-style: italic;
 		}
 
 		header.vitae p, ul{
-			padding-left: 3.0em;
+			padding-left: 4.0em;
 			margin: 0;
 		}
 
 		header.vitae ul, li{
-			padding-left: 4.0em;
+			padding-left: 5.0em;
 			text-align: left;
 			list-style: square;
 		}
