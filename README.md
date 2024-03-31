@@ -1,7 +1,7 @@
-#kwsingleton.github.io
+# kwsingleton.github.io
 
-Repo of website code for presenting personal information at www.kwsingleton.com
+Repo of website code for presenting personal information at www.kwsingleton.com and www.kylesingleton.com
 
-#Current Design
+# Design
 
-Utilizes free creative commons design from html5up.com to establish a well designed landing page. Future design ideas under consideration.
+Utilizes free creative commons design from html5up.com to establish a well designed landing page
