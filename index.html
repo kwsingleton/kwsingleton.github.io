@@ -22,7 +22,21 @@
 				<!-- Main -->
 					<section id="main">
 						<header>
-							<span class="avatar"><img src="images/kyle.jpg" alt="Kyle W Singleton" /></span>
+							<span class="avatar">
+								<svg width="336" height="336" viewBox="0 0 336 336">
+									<defs>
+										<!-- Define the clip path (a perfect circle) -->
+										<clipPath id="circleClip">
+											<circle r="166" cx="166" cy="166" />
+										</clipPath>
+									</defs>
+									<!-- Apply Clip Path to Image -->
+									<image href="images/kyle.jpg" 
+										x="-2" y="-2" 
+										width="336" height="336" 
+										clip-path="url(#circleClip)" />
+								</svg>
+							</span>
 							<h1>Kyle W Singleton, PhD</h1>
 							<h2>Senior Data Science Analyst</h2>
 							<h3>Mayo Clinic, Phoenix, AZ</h3>

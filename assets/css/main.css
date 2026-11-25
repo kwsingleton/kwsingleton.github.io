@@ -767,11 +767,11 @@
 			margin-bottom: 1.5em;
 		}
 
-			#main .avatar img {
+			#main .avatar svg {
 				display: block;
 				margin: 0 auto;
-				border-radius: 100%;
-				box-shadow: 0px 0px 30px 20px grey;;
+				-webkit-filter: drop-shadow( 0px 4px 8px rgba(0, 0, 0, 1));
+				filter: drop-shadow( 0px 4px 8px rgba(0, 0, 0, 1));
 			}
 
 			#main .research {
@@ -784,14 +784,14 @@
 				padding-left: 2.5em;
 			}
 			#main .avatar_small {
-			    display: inline-table;
+				display: inline-table;
 			}
-			#main .avatar_small img {
-				display: block;
-				margin: 0 auto;
-				border-radius: 100%;
-				box-shadow: 0px 0px 40px 10px grey;
-				height: 75px;
+			#main .avatar_small h3{
+				margin: 0 0 -3em 0;
+			}
+			#main .avatar_small svg {
+				-webkit-filter: drop-shadow( 0px 4px 8px rgba(0, 0, 0, 1));
+				filter: drop-shadow( 0px 4px 8px rgba(0, 0, 0, 1));
 			}
 			#main .nav {
 					display: inline-table;
@@ -819,6 +819,40 @@
 			-webkit-transform: rotateX(15deg);
 			-ms-transform: rotateX(15deg);
 			transform: rotateX(15deg);
+		}
+
+
+		.vitae h1, h2, h3, h4, h5, h6{
+			text-align: left;
+			line-height: 1.5;
+			letter-spacing: 0.1em;
+			margin: 0.75em 0.75em 0 0;
+		}
+
+		.vitae h2{
+			padding-left: 1.0em;
+		}
+
+		.vitae h3{
+			padding-left: 2.0em;
+			margin: 1em 0.5em 0 0.5em;
+		}
+
+		.vitae h4{
+			padding-left: 3.0em;
+			margin: 0 0.5em 0 0.5em;
+			font-style: italic;
+		}
+
+		.vitae p, ul{
+			padding-left: 4.0em;
+			margin: 0;
+		}
+
+		.vitae ul, li{
+			padding-left: 5.0em;
+			text-align: left;
+			list-style: square;
 		}
 
 /* Footer */

@@ -10,7 +10,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="assets/css/vitae.css" />
+		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
@@ -25,7 +25,20 @@
 						<section class="readable">
 						<header>
 							<div class="avatar_small">
-								<img src="images/kyle.jpg" alt="Kyle W Singleton" /><h2>Kyle W Singleton</h2>
+								<svg width="75" height="75" viewBox="0 0 75 75">
+									<defs>
+										<!-- Define the clip path (a perfect circle) -->
+										<clipPath id="circleClip">
+											<circle r="35" cx="35" cy="35" />
+										</clipPath>
+									</defs>
+									<!-- Apply Clip Path to Image -->
+									<image href="images/kyle.jpg" 
+										x="-2.5" y="0" 
+										width="75" height="75" 
+										clip-path="url(#circleClip)" />
+								</svg>
+								<h3>Kyle W Singleton</h3>
 							</div>
 							<div class="nav">
 								<ul class="icons">
@@ -39,7 +52,7 @@
 						</header>
 						<hr />
 						<h1>Curriculum Vitae</h1>
-						<header class="vitae">
+						<section class="vitae">
 							<h2><u>PROFESSIONAL EXPERIENCE</u></h2>
 							<h3>Senior Data Science Analyst: Apr 2022 - Present</h3>
 							<p><i>Mayo Clinic, Phoenix, AZ</i></p>
@@ -143,7 +156,7 @@
 							<p>NLM Biomedical Informatics Training Fellowship: 2008 - 2012</p>
 							<p>NIH Postbaccalaureate Intramural Research Training Award: 2006 - 2008</p>
 						</p>
-						</header>
+						</section>
 						</section>
 					</section>
 
