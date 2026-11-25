@@ -822,7 +822,12 @@
 		}
 
 
-		.vitae h1, h2, h3, h4, h5, h6{
+		.vitae h1, 
+		.vitae h2, 
+		.vitae h3, 
+		.vitae h4, 
+		.vitae h5, 
+		.vitae h6{
 			text-align: left;
 			line-height: 1.5;
 			letter-spacing: 0.1em;
